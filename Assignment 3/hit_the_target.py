@@ -67,15 +67,15 @@ else:
         print('You missed the target.')
 
         if turtle.xcor() > (TARGET_LLEFT_X + TARGET_WIDTH):
-                print("Try a greater angle")
+                print("Try a greater angle.")
 
-        if turtle.xcor() < TARGET_LLEFT_X:
-                print("Try a lesser angle")
+        elif turtle.xcor() < TARGET_LLEFT_X:
+                print("Try a lesser angle.")
 
         if turtle.ycor() > (TARGET_LLEFT_Y + TARGET_WIDTH):
                 print("Try lesser force")
 
-        if turtle.ycor() < TARGET_LLEFT_Y:
+        elif turtle.ycor() < TARGET_LLEFT_Y:
                 print("Try more force")
 
 turtle.done()
